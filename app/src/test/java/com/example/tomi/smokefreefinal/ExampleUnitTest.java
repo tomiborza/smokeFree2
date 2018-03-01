@@ -1,4 +1,4 @@
-package com.example.tomi.smokefree;
+package com.example.tomi.smokefreefinal;
 
 import org.junit.Test;
 

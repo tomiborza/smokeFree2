@@ -1,4 +1,4 @@
-package com.example.tomi.smokefree;
+package com.example.tomi.smokefreefinal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.tomi.smokefree", appContext.getPackageName());
+        assertEquals("com.example.tomi.smokefreefinal", appContext.getPackageName());
     }
 }
