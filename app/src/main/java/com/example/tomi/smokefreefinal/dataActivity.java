@@ -14,7 +14,7 @@ public class dataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_data);
     }
     public void startProgram(View view){
-        Intent start = new Intent(this, mainScreen.class);
+        Intent start = new Intent(this, pula_activity.class);
         startActivity(start);
     }
 }
