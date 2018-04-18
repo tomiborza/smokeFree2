@@ -30,11 +30,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/cigsPD"
-        android:layout_width="61dp"
-        android:layout_height="38dp"
+        android:id="@+id/cigsinput"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,20 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Price of cigarettes in your currency:"
+        android:text="Time spent smoking:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <EditText
-        android:id="@+id/cigsPC"
-        android:layout_width="61dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cigsPD" />
 
     <TextView
         android:id="@+id/textView5"
@@ -67,44 +56,71 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Time in months"
+        android:text="Price per packet of cigarettes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="61dp"
-        android:layout_height="38dp"
+        android:id="@+id/priceinput"
+        android:layout_width="68dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cigsPC" />
+        tools:layout_editor_absoluteY="145dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:onClick="startProgram"
-        android:text="start"
+        android:text="calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="59dp"
+    <EditText
+        android:id="@+id/yearinput"
+        android:layout_width="50dp"
         android:layout_height="36dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text="years and"
+        app:layout_constraintStart_toEndOf="@+id/yearinput"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/monthinput"
+        android:layout_width="48dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/cigsPC"
-        app:layout_constraintTop_toBottomOf="@+id/cigsPD" />
+        android:text="months"
+        app:layout_constraintStart_toEndOf="@+id/monthinput"
+        tools:layout_editor_absoluteY="117dp" />
 
 </android.support.constraint.ConstraintLayout>
